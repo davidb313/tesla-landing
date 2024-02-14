@@ -1,0 +1,43 @@
+---
+import CybertruckLogo from "./CybertruckLogo.astro";
+---
+
+<section
+  class='landing-section bg-black h-screen w-screen text-center overflow-hidden relative'
+>
+  <div class='z-30 relative h-full flex flex-col'>
+    <header>
+      <div class='flex justify-center'>
+        <CybertruckLogo />
+      </div>
+    </header>
+
+    <footer class='flex flex-col flex-grow justify-end pb-12'>
+      <div class='gap-4'>
+        <a
+          class='text-gray-900 min-w-64 bg-gray-100 hover:bg-gray-200 font-medium rounded-md text-sm px-5 py-2.5 text-center justify-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2'
+          href='#'>Custom Order</a
+        >
+        <a
+          class='text-white min-w-64 bg-black/60 blur-[0.3px] hover:bg-black/80 font-medium rounded-md text-sm px-5 py-2.5 text-center justify-center inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2'
+          href='#'>Demo Drive</a
+        >
+      </div>
+      <p class='text-white text-xs pt-6'>
+        *Excludes taxes and fees with price subject to change. Available in
+        select states.
+      </p>
+    </footer>
+  </div>
+
+  <div class='absolute top-0 bottom-0 h-full w-full z-10'>
+    <video
+      class='object-cover h-full w-full'
+      autoplay
+      muted
+      loop
+      src='/cybertruck.webm'
+    >
+    </video>
+  </div>
+</section>
